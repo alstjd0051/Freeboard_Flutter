@@ -30,11 +30,12 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-}
 
-void onHeartPressed() {
-  // ignore: avoid_print
-  print('클릭');
+  void onHeartPressed() {
+    setState(() {
+      firstDay = firstDay.subtract(const Duration(days: 1));
+    });
+  }
 }
 
 class _DDay extends StatelessWidget {
