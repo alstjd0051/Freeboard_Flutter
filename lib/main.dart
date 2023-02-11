@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(SplashScreen());
-}
-// void main() => runApp(SplashScreen());
+// void main() {
+//   runApp(SplashScreen());
+// }
+void main() => runApp(SplashScreen());
 
 class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('splash Screen'),
+        body: Container(
+          decoration: const BoxDecoration(
+            color: Colors.orange,
+          ),
+          child: const Center(
+            child: Text('splash Screen'),
+          ),
         ),
       ),
     );
