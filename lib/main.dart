@@ -14,8 +14,10 @@ class SplashScreen extends StatelessWidget {
           decoration: const BoxDecoration(
             color: Colors.orange,
           ),
-          child: const Center(
-            child: Text('splash Screen'),
+          child: Center(
+            child: Image.asset(
+              'assets/Logo.jpg',
+            ),
           ),
         ),
       ),
